@@ -1,0 +1,15 @@
+
+finalexe: myMain.o myMathFunc.o myStrFunc.o
+	 gcc -o finalexe myMain.o myMathFunc.o myStrFunc.o
+
+myMathFunc.o: myMathFunc.c
+	gcc -c myMathFunc.c 
+
+
+myStrFunc.o: myStrFunc.c
+	gcc -c myStrFunc.c 
+
+
+myMain.o: myMain.c 
+	gcc -c myMain.c 
+
